@@ -4,6 +4,12 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 	<package name="struts" extends="struts-default">
+		
+		<!-- login -->
+		<action name="LoginAction" class="com.jxgl.action.LoginAction" method="isLogin">
+			<result name="success">/index.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
 	
 		
 	</package>

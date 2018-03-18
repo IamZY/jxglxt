@@ -7,4 +7,29 @@
 		<generator class="assigned"></generator>
 	</primary-key>
 </table>
+<table name="dlb" catalog="jxglxt">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
+<table name="jfb" catalog="jxglxt">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
+<table name="Kcb" catalog="jxglxt">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
+<table name="Ksb" catalog="jxglxt">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
+<table name="Spb" catalog="jxglxt">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
 </hibernate-reverse-engineering>

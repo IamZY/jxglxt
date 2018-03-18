@@ -18,6 +18,13 @@
 	<property name="dialect">
 		org.hibernate.dialect.MySQLDialect
 	</property>
+	
+	<mapping resource="com/jxgl/domain/Dlb.hbm.xml" />
+	<mapping resource="com/jxgl/domain/Jfb.hbm.xml" />
+	<mapping resource="com/jxgl/domain/Kcb.hbm.xml" />
+	<mapping resource="com/jxgl/domain/Ksb.hbm.xml" />
+	<mapping resource="com/jxgl/domain/Spb.hbm.xml" />
+	<mapping resource="com/jxgl/domain/Yhb.hbm.xml" />
 
 </session-factory>
 
