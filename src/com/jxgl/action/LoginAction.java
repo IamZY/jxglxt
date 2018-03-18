@@ -1,5 +1,8 @@
 package com.jxgl.action;
 
+import java.io.InputStream;
+import java.io.StringBufferInputStream;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -12,8 +15,8 @@ public class LoginAction {
 
 	/*private property*/
 	private Dlb user;
-	private String errMsg;
 	private LoginDao loginDao;
+	private InputStream ajaxInputStream;
 	
 	
 	/*set get method */
@@ -23,13 +26,15 @@ public class LoginAction {
 	public void setUser(Dlb user) {
 		this.user = user;
 	}
+		
 	
-	public String getErrMsg() {
-		return errMsg;
+	public InputStream getAjaxInputStream() {
+		return ajaxInputStream;
 	}
-	public void setErrMsg(String errMsg) {
-		this.errMsg = errMsg;
+	public void setAjaxInputStream(InputStream ajaxInputStream) {
+		this.ajaxInputStream = ajaxInputStream;
 	}
+	
 	
 	/* verfity login*/
 	public String isLogin(){
@@ -52,16 +57,13 @@ public class LoginAction {
 			
 			result = "success";
 		}else {
-			errMsg = "用户名或密码错误！";
 			result = "error";
 		};
 		
-		return result;
+		ajaxInputStream = new StringBufferInputStream(result);
+		
+		return "success";
 	}
 	
-	
-	
-	
-	
-	
+		
 }
