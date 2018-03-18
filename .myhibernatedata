@@ -1,17 +1,20 @@
 #MyEclipse Hibernate Properties
-#Sat Mar 17 20:50:07 CST 2018
-genVersionTag=false
-sessionFactoryName=com.jxgl.hibernate.HibernateSessionFactory
-genAnnotations=false
-configFile=/jxgl/src/hibernate.cfg.xml
-reStrategyClass=
-sessionFactoryId=
-profile=
-detectM2M=false
+#Sun Mar 18 17:08:04 CST 2018
 genBasicCompId=false
-keyGenerator=
-createConfigFile=true
-basePersistenceClass=
+sessionFactoryName=com.jxgl.hibernate.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=false
+reStrategyClass=
 detectO2O=false
+springDaoFile=
 useJavaTypes=true
-reSettingsFile=
+keyGenerator=assigned
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/jxglxt/hibernate.reveng.xml
+configFile=/jxgl/src/hibernate.cfg.xml
+createConfigFile=true
